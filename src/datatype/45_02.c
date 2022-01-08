@@ -1,27 +1,15 @@
 #include <stdio.h>
 
-// 자료형의 최댓값과 최소값을 정의한 해더 파일
-#include <limits.h> 
-// 부호 있는 정수형 최대, 최소값
 void main() {
-    unsigned char uCharMax = UCHAR_MAX;
-    unsigned char uCharMin = 0;
-    printf("unsigned char 최대값 : %d, 최소값 : %d\n", uCharMax, uCharMin);
 
-    unsigned short uShortMax = USHRT_MAX;
-    unsigned short uShortMin = 0;
-    printf("unsigned short 최대값 : %d, 최소값 : %d\n", uShortMax, uShortMin);
+    unsigned char unNum1 = 200;                             // 1바이트 부호 없는 정수형으로  변수를 선언하고 값 할당
+    unsigned short unNum2 = 60000;                           // 2바이트 부호 없는 정수형으로 변수를 선언하고 값 할당
+    unsigned int unNum3 = 4123456789;                       // 4바이트 부호 없는 정수형으로 변수를 선언하고 값 할당
+    unsigned long unNum4 = 4123456789;                      // 4바이트 부호 없는 정수형으로 변수를 선언하고 값 할당
+    unsigned long long unNum5 = 12345678901234567890;    	// 8바이트 부호 없는 정수형으로  변수를 선언하고 값 할당
 
-    unsigned int uIntMax = UINT_MAX;
-    unsigned int uIntMin = 0;
-    printf("unsigned int 최대값 : %d, 최소값 : %d\n", uIntMax, uIntMin);
-
-    unsigned long uLongMax = ULONG_MAX;
-    unsigned long uLongMin = 0;
-    printf("unsigned long 최대값 : %d, 최소값 : %d\n", uLongMax, uLongMin);
-
-    unsigned long long uLongLongMax = ULLONG_MAX;
-    unsigned long long uLongLongMix = 0;
-    printf("unsigned long long  최대값 : %d, 최소값 : %d\n", uLongLongMax, uLongLongMix);
-
+    // unsigned char, unsigned short, unsigned int는 %u로 출력하고 
+    // unsigned long은 %lu, unsigned long long은 %llu로 출력
+    printf("%u %u %u %lu %llu\n", unNum1, unNum2, unNum3, unNum4, unNum5);
+    // 200 60000 4123456789 4123456789 12345678901234567890
 }
