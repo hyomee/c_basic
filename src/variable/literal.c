@@ -6,4 +6,9 @@ void main() {
     printf("%s\n", "Hello World");  // "Hello World" 문자열 리터럴
     printf("%f\n", 0.1f);           // 0.100000 실수형 리터럴 지수
     printf("%e\n", 1.0e-5f);        // 1.000000e-005 실수형  지수
+
+    
+    printf("%d, 0%o, %#o \n", 0275, 0275, 0275); // 8진수 리터럴        
+    printf("%d, 0x%x, %#x \n", 0x275, 0x275, 0x275); // 16진수 리터럴        
+
 }
