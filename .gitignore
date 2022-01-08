@@ -1,4 +1,3 @@
+*.exe
 src/*.exe
-src/variable/*.exe
-src/datatype/*.exe
-src/function/*.exe
+
