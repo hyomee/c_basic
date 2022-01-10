@@ -45,9 +45,9 @@
         ""
       ],
       "stopAtEntry": false,
-      "cwd": "d:/works/c_basic/src",
+      "cwd": "d:/works/c_basic/src/operator",
       "environment": [],
-      "program": "d:/works/c_basic/src/build/Debug/outDebug",
+      "program": "d:/works/c_basic/src/operator/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
