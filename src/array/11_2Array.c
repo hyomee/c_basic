@@ -6,7 +6,7 @@ void main() {
 
     for ( index = 0;  index < 12 ; index ++) {
         x = index / 3 ;
-        
+        // printf("X : %d  , y : %d \n", x, y);
         
         if (x == 0) {
             printf("C : %d \n", score[index]);
@@ -20,13 +20,13 @@ void main() {
     for ( index = 0;  index < 12 ; index ++) {        
         y = index / 4 ;
         if (y == 0) {
-            printf("·Õ±æµ¿ : %d \n", score[index]);
+            printf("ë¡±ê¸¸ë™ : %d \n", score[index]);
         } else if (y == 1) {
-            printf("¹ÙµÏÀÌ :  %d \n", score[index]);
+            printf("ë°”ë‘‘ì´ :  %d \n", score[index]);
         } else if (y == 2) {
-            printf("±è¿µÀÌ :  %d \n", score[index]);
+            printf("ê¹€ì˜ì´ :  %d \n", score[index]);
         } else if (y == 3) {
-            printf("Á¤Á¤ÀÌ : %d \n", score[index]);
+            printf("ì •ì •ì´ : %d \n", score[index]);
         }
     }
 

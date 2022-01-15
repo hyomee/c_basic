@@ -2,13 +2,9 @@
 #include <string.h>
 
 void main() { 
-    char source[] = "Hello";
-    char target[] = "World";
-
-    printf("target : %s \ntargetSize : %d\n", target, sizeof(target));
-
-    strcat(source, target);   
-    
-    printf("source : %d \nsourceSize : %d\n", source, sizeof(source));
-    printf("target : %s \ntargetSize : %s\n", target, sizeof(target)); 
+    char source[6] = "Hello";
+    char target[11] = "World";
+    strcat(target, source);       
+    printf("source : %s \nsourceSize : %d\n", source, sizeof(source));
+    printf("target : %s \ntargetSize : %d \ntargetLength : %d\n", target, sizeof(target), strlen(target)); 
 }
