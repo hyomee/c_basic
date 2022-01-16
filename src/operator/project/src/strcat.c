@@ -1,33 +1,31 @@
 #include <stdio.h>
 
 void main() { 
-    char score[12] = {80, 90, 100, 70,50,40, 90, 80, 100, 60, 80, 80};
-    int index, x, y;
+    char score[4][3] = {{1, 2, 3}, {4,5,6}, {7, 8, 9}, {10, 11, 12}};
+    char stud[4] ;
+    char scoreSum[3] = { 0,0,0};   
+    char scoreSumName[3][10] = { "C", "C++", "JAVA"};     
+    char studName[4][30] = {"»´±Êµø", "πŸµœ¿Ã", "±Ëøµ¿Ã" ,"¡§¡§¿Ã"};
+    int x, y;
+   
 
-    for ( index = 0;  index < 12 ; index ++) {
-        x = index / 3 ;
+    for ( y = 0;  y < 4 ; y ++) {
+        int sum = 0;
+        for ( x = 0;  x < 3 ; x ++ ) {
+            sum += score[y][x];
+            scoreSum[x] += score[y][x];
+        } 
+        stud[y] = sum;
         
-        
-        if (x == 0) {
-            printf("C : %d \n", score[index]);
-        } else if (x == 1) {
-            printf("C++ : %d \n", score[index]);
-        } else if (x == 2) {
-            printf("JAVA : %d \n", score[index]);
-        }
     }
 
-    for ( index = 0;  index < 12 ; index ++) {        
-        y = index / 4 ;
-        if (y == 0) {
-            printf("∑’±Êµø : %d \n", score[index]);
-        } else if (y == 1) {
-            printf("πŸµœ¿Ã :  %d \n", score[index]);
-        } else if (y == 2) {
-            printf("±Ëøµ¿Ã :  %d \n", score[index]);
-        } else if (y == 3) {
-            printf("¡§¡§¿Ã : %d \n", score[index]);
-        }
+   
+    for ( x = 0;  x < 3 ; x ++) {
+       printf("%s : %d \n", scoreSumName[x], scoreSum[x]);
     }
+    for ( y = 0;  y < 4 ; y ++) {
+       printf("%s : %d \n", studName[y], stud[y]);
+    }
+    
 
 }

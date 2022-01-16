@@ -1,28 +1,28 @@
 #include <stdio.h>
 
 void main() { 
-    char score[4][3] = {{1, 2, 3}, {4,5,6}, {7, 8, 9}, {10, 11, 12}};
-    char stud[4] ;
+    char score[4][3] = {{80, 90, 100}, {70,50,40}, {90,80,100}, {60,80,80}};
+    int stud[4] ;
     char studName[4] = {'A', 'B', 'C' ,'D'};
-    int x, y;
+    int c, r;
     int cSum = 0, cplusSum = 0, javaSum =0 ;
 
 
     // 언어별 
-    for ( y = 0;  y < 4 ; y ++) {
+    for ( r = 0;  r < 4 ; r ++) {
         int sum = 0;
-        for ( x = 0;  x < 3 ; x ++ ) {
-            sum += score[y][x];
-            if (x == 0) {
-                cSum += score[y][x];
-            } else if (x == 1) {                
-                cplusSum += score[y][x];
-            } else if (x == 2) {
-                javaSum += score[y][x];
+        for ( c = 0;  c < 3 ; c ++ ) {
+            sum += score[r][c];
+            if (c == 0) {
+                cSum += score[r][c];
+            } else if (c == 1) {                
+                cplusSum += score[r][c];
+            } else if (c == 2) {
+                javaSum += score[r][c];
                  
             } 
         } 
-        stud[y] = sum;
+        stud[r] = sum;
         
     }
 
@@ -30,8 +30,8 @@ void main() {
     printf("C : %d \n", cSum);
     printf("C++ : %d \n", cplusSum);
     printf("JAVA : %d \n", javaSum);
-    for ( y = 0;  y < 4 ; y ++) {
-       printf("%c : %d \n", studName[y], stud[y]);
+    for ( r = 0;  r < 4 ; r ++) {
+       printf("%c : %d \n", studName[r], stud[r]);
     }
     
 
