@@ -1,5 +1,7 @@
 *.exe
 *.o
+*.json
 src/*.exe
 src/*.o
+.vscode/*.json
 src/operator/project/src/*.o
