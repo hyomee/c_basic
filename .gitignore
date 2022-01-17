@@ -5,3 +5,6 @@ src/*.exe
 src/*.o
 .vscode/*.json
 src/operator/project/src/*.o
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/tasks.json

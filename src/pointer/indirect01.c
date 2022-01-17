@@ -11,7 +11,7 @@ void main() {
     printf("a address  : %p\n",  &a);
     printf("pa data    : 0x%X\n", pa );    
     printf("pa address : %p\n",  &pa);
-    *pa += 1;
+    *pa ++;
     printf("pa data    : 0x%X\n", pa );    
     printf("pa address : %p\n",  &pa);
     printf("a data     : 0x%X\n", a );
