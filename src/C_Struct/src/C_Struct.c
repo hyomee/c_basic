@@ -17,6 +17,14 @@ int main(void) {
 	funcPrintNation("대한민국");
 	NATIONS na = "영국";
 	funcPrintNation(na);
+	printf("\n***** 자동차 struct ******\n");
+	funViewCars();
+	printf("\n***** 자동차 typedef struct ******\n");
+	funViewCarsTypedef();
+	printf("\n***** 자동차 전역 변수 ******\n");
+	funViewCarsGlobal();
+	printf("\n***** 자동차 익명 ******\n");
+		funViewCarsGlobal();
 	return EXIT_SUCCESS;
 }
 
