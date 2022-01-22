@@ -10,8 +10,18 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "StructCar.h"
+
+extern int *funPointer() ;
+extern struct Car getCar();
 
 int main(void) {
-	printf("!!! C언어 함수 !!!");
+
+	printf("!!! pointer 반환 함수 !!!\n");
+	int *ptrRn =  funPointer();
+	printf("%d", *ptrRn );
+
+	struct Car cars= getCar();
+	printf("\n%s", cars.name );
 	return EXIT_SUCCESS;
 }

@@ -24,7 +24,11 @@ int main(void) {
 	printf("\n***** 자동차 전역 변수 ******\n");
 	funViewCarsGlobal();
 	printf("\n***** 자동차 익명 ******\n");
-		funViewCarsGlobal();
+	funViewCarsGlobal();
+	printf("\n***** 공용체 ******\n");
+	funViewClass();
+	printf("\n***** 열거형 ******\n");
+	funEnum();
 	return EXIT_SUCCESS;
 }
 
