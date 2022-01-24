@@ -8,12 +8,10 @@
 
 void funPointerTypeCasting01();
 void funPointerTypeCasting02();
-void funPointerTypeCasting03();
 
 void funPointerTypeCasting() {
 	funPointerTypeCasting01();
 	funPointerTypeCasting02();
-	funPointerTypeCasting03();
 }
 
 void funPointerTypeCasting01() {
@@ -48,7 +46,7 @@ void funPointerTypeCasting02() {
 	printf("*ptrShort 참조 값	: 0x%X\n", *ptrShort);  // 0x5678
 	printf("*ptrInt 주소		: %p\n", &ptrInt); 		// 000000000062FDA8
 	printf("*ptrInt 값		: 0x%X\n", ptrInt);  	// 0x62FDBC ( ??? )
-	ptrChr = (char *)ptrNum;
+	ptrInt = (int *)ptrShort;
 
 	printf("*ptrInt 주소		: %p\n", &ptrInt); 		// 000000000062FDA8
 	printf("*ptrInt 값		: 0x%X\n", ptrInt);  	// 0x62FDBE
