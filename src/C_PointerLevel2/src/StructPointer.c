@@ -117,8 +117,25 @@ void funStructStruct() {
 
 }
 
+void *funStructReturn(void) {
+	STUDENT *student = malloc(sizeof(STUDENT));
+	void *vStudentPtr;
 
+	student->age  = 19;
+	strcpy(student->address, "서울시 송파구 방이동");
+	strcpy(student->name, "홍깅동");
 
+	vStudentPtr = student;
+	free(student);
+	return vStudentPtr;
+}
 
+void funStructReturnMain(void) {
+	STUDENT student = *(STUDENT *)funStructReturn();
+	printf("\n===== 구조체 반환  ======\n");
 
+	printf(" 이름	: %s\n", student.name);
+	printf(" 주소	: %s\n", student.address);
+	printf(" 나이	: %d\n", student.age);
+}
 
