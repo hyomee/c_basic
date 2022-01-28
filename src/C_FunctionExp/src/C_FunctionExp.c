@@ -46,7 +46,6 @@ int funPointerTest(int a, int b) {
 }
 
 
-
 int funPointerExpCall(void (*fnAdd)(int, int)) {
 	funPointerBase();
 	return fnAdd;
